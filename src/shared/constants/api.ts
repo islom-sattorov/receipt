@@ -1,1 +1,1 @@
-export const API_KEY = "https://json-receipt.vercel.app";
+export const API_KEY = "http://localhost:8080";
