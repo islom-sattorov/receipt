@@ -37,8 +37,8 @@ export const RecipesList = ({ data, loading }: Props) => {
       justifyContent={"center"}
     >
       {data?.map((item, idx) => (
-        <div onClick={() => navigate(`/detail/${item.id}`)}>
-          <RecipesItem key={idx} {...item} />
+        <div key={idx} onClick={() => navigate(`/detail/${item.id}`)}>
+          <RecipesItem {...item} />
         </div>
       ))}
     </Box>
